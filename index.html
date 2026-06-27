@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wedding weekend website for Ross Reiffman and Stephanie Moinian in Venice, Italy."
+    />
+    <title>Ross & Stephanie | Venice Wedding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="password-screen" id="passwordScreen">
+        <div class="water-silk" aria-hidden="true"></div>
+        <div class="password-panel">
+          <img class="password-mark interactive-gondolier" src="/assets/gondolier-logo.png" alt="Illustrated Venetian gondolier logo" />
+          <p class="kicker">Invito Privato</p>
+          <h1>Ross & Stephanie</h1>
+          <p class="panel-copy">Enter the wedding password to view the Venice weekend.</p>
+          <form id="passwordForm" class="password-form">
+            <label for="passwordInput">Password</label>
+            <div class="password-row">
+              <input id="passwordInput" type="password" autocomplete="current-password" />
+              <button type="submit">Enter</button>
+            </div>
+            <p class="error" id="passwordError" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <main class="site-shell locked" id="siteShell">
+        <nav class="top-nav" aria-label="Wedding website navigation">
+          <a href="#home" class="brand">
+            <img class="interactive-gondolier" src="/assets/gondolier-logo.png" alt="" />
+            <span>Ross & Stephanie</span>
+          </a>
+          <div class="nav-links">
+            <a href="#weekend">Weekend</a>
+            <a href="#venice">Venice</a>
+            <a href="#travel">Travel</a>
+            <a href="#rsvp">RSVP</a>
+          </div>
+        </nav>
+
+        <section class="hero" id="home" aria-label="Wedding introduction">
+          <div class="hero-media" role="img" aria-label="Grand Canal and Rialto Bridge in Venice"></div>
+          <div class="hero-lagoon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <button class="hero-mark-button" type="button" aria-label="Animate the gondolier logo">
+            <img class="hero-mark interactive-gondolier" src="/assets/gondolier-logo.png" alt="Illustrated Venetian gondolier in a gondola" />
+          </button>
+          <div class="hero-content">
+            <p class="kicker">Venice, Italy · October 9-11</p>
+            <h1>Ross Reiffman & Stephanie Moinian</h1>
+            <p>
+              A wedding weekend among canals, candlelit palazzi, and the quiet glamour of
+              La Serenissima.
+            </p>
+            <a href="#weekend" class="primary-link">View the Weekend</a>
+          </div>
+        </section>
+
+        <section class="intro-band">
+          <div>
+            <button class="mark-button" type="button" aria-label="Animate the gondolier logo">
+              <img class="section-mark interactive-gondolier" src="/assets/gondolier-logo.png" alt="" />
+            </button>
+            <p class="section-label">Benvenuti</p>
+            <h2>We cannot wait to celebrate with you in Venice.</h2>
+          </div>
+          <p>
+            Join us for three days of welcome drinks, ceremony, dinner, dancing, and a
+            slow Sunday farewell along the lagoon. Formal details will be added here as
+            the weekend comes together.
+          </p>
+        </section>
+
+        <section class="section" id="weekend">
+          <div class="section-heading">
+            <p class="section-label">The Weekend</p>
+            <h2>October 9-11</h2>
+          </div>
+          <div class="schedule-grid">
+            <article class="event-card">
+              <div class="canal-rule"></div>
+              <span>Friday · October 9</span>
+              <h3>Welcome Aperitivo</h3>
+              <p>Ease into Venice with spritzes, cicchetti, and golden-hour views.</p>
+              <strong>Evening · Location to come</strong>
+            </article>
+            <article class="event-card featured">
+              <div class="canal-rule"></div>
+              <span>Saturday · October 10</span>
+              <h3>Ceremony & Celebration</h3>
+              <p>Vows, dinner, and dancing in an elegant Venetian setting.</p>
+              <strong>Black tie invited · Details to come</strong>
+            </article>
+            <article class="event-card">
+              <div class="canal-rule"></div>
+              <span>Sunday · October 11</span>
+              <h3>Farewell Brunch</h3>
+              <p>A relaxed goodbye before everyone drifts back across the water.</p>
+              <strong>Late morning · Location to come</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="venice-section" id="venice">
+          <div class="image-tile" role="img" aria-label="Gondola on the Grand Canal in Venice">
+            <img class="interactive-gondolier" src="/assets/gondolier-logo.png" alt="" />
+          </div>
+          <div class="copy-block">
+            <p class="section-label">La Serenissima</p>
+            <h2>An Italian weekend with Venetian ease.</h2>
+            <p>
+              Expect polished evenings, unhurried walks over stone bridges, espresso at
+              quiet counters, and boats instead of cars. The mood is refined, romantic,
+              and just a little theatrical.
+            </p>
+            <div class="detail-list">
+              <p><span>Dress</span> Elegant destination wedding attire</p>
+              <p><span>Setting</span> Historic Venice and the lagoon</p>
+              <p><span>Rhythm</span> Aperitivo, ceremony, dinner, dancing, farewell</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section travel" id="travel">
+          <div class="section-heading">
+            <p class="section-label">Travel Notes</p>
+            <h2>Plan for boats, bridges, and a little extra time.</h2>
+          </div>
+          <div class="travel-grid">
+            <div>
+              <h3>Arriving</h3>
+              <p>
+                Venice Marco Polo Airport is the closest major airport. From there,
+                guests can reach the city by water taxi, Alilaguna ferry, or car transfer
+                to Piazzale Roma.
+              </p>
+            </div>
+            <div>
+              <h3>Staying</h3>
+              <p>
+                Hotel suggestions and room block details will be posted here. Staying
+                near San Marco, Dorsoduro, or the Grand Canal will keep the weekend easy.
+              </p>
+            </div>
+            <div>
+              <h3>Moving Around</h3>
+              <p>
+                Venice is best on foot and by vaporetto. Pack comfortable shoes for
+                bridges and bring a small bag for water-taxi transfers.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="rsvp-band" id="rsvp">
+          <button class="mark-button" type="button" aria-label="Animate the gondolier logo">
+            <img class="rsvp-mark interactive-gondolier" src="/assets/gondolier-logo.png" alt="" />
+          </button>
+          <p class="section-label">RSVP</p>
+          <h2>Formal invitation and RSVP details are coming soon.</h2>
+          <p>
+            For now, please save October 9-11 for Ross and Stephanie's wedding weekend in
+            Venice.
+          </p>
+          <a href="mailto:ross@example.com?subject=Ross%20and%20Stephanie%20Wedding%20RSVP" class="primary-link dark">
+            Email RSVP Note
+          </a>
+        </section>
+
+        <section class="section faq">
+          <div class="section-heading">
+            <p class="section-label">Good to Know</p>
+            <h2>Weekend Details</h2>
+          </div>
+          <div class="faq-grid">
+            <details open>
+              <summary>Will there be more schedule details?</summary>
+              <p>Yes. Timing, venue addresses, and transportation notes will be added as plans are finalized.</p>
+            </details>
+            <details>
+              <summary>Should we book travel now?</summary>
+              <p>Guests traveling internationally may want to begin watching flights and hotel options early.</p>
+            </details>
+            <details>
+              <summary>Is Venice walkable?</summary>
+              <p>Very, but it includes bridges, stone streets, and boat transfers. Comfortable formal shoes are your friend.</p>
+            </details>
+          </div>
+        </section>
+
+        <footer>
+          <p>Ross Reiffman & Stephanie Moinian · Venice · October 9-11</p>
+          <p>
+            Venice photography via Wikimedia Commons:
+            <a href="https://commons.wikimedia.org/wiki/File:Venice_new_banner.jpg">Rialto panorama</a>
+            and
+            <a href="https://commons.wikimedia.org/wiki/File:Gondola_on_the_Grand_Canal,_Venice,_Italy.jpg">Grand Canal gondola</a>.
+          </p>
+        </footer>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
