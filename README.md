@@ -36,8 +36,14 @@ so no RSVP is lost.
 
 ## Photography
 
-Canal and water photography is hot-linked from [Pexels](https://www.pexels.com)
-(free license, no attribution required). Each photo sits on top of a matching
-CSS gradient, so sections degrade gracefully if an image is ever unavailable.
-To swap in your own photos, replace the `url(...)` entries in `styles.css`
-(`.hero-photo`, `.divider-photo-1`, `.divider-photo-2`).
+The couple's own Venice photos live in `images/` (resized and compressed for
+the web). They set the site's palette: terracotta, marigold and lagoon teal.
+
+- `hero-grand-canal.jpg` — hero, full-bleed
+- `canal-golden.jpg` — quote divider after the schedule
+- `canal-bridge.jpg` — divider before the RSVP
+- `gondola.jpg` — framed postcard on the password gate
+
+Each full-bleed photo sits on top of a matching CSS gradient, so sections
+degrade gracefully if an image ever fails to load. To swap photos, replace the
+files or the `url(...)` entries in `styles.css`.
